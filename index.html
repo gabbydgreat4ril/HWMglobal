@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HWMglobal</title>
+    <link rel="stylesheet" href="./hwm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="home-page">
+    <header>
+      <div class="toggle-btn" onclick="toggle()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="logo">
+        <img src="./images/IMG-20220306-WA0005.jpg" alt="">
+        <h2>HWM <br> global</h2>
+      </div>
+        <nav id="nav">
+            <ul>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="depart"><a href="#depart">Departments</a></li>
+                <li id="mess"><a href="#mess">Messages</a></li>
+                <li id="week"><a href="contact.html">Contact Us</a></li>
+                <li id="about"><a href="about.html">About-us</a></li>
+                <img src="./images/search-icon.png" id="search" onclick="search()" alt="">
+            </ul>
+        </nav>
+        <div class="sidenav">
+          <div class="menu">online</div>
+          <div>
+            <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+            <a href=""><i class="fa-solid fa-envelope fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-telegram fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-youtube fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-twitter fa-2x"></i></a>
+          </div>
+        </div>
+    </header>
+    <div id="form">
+      <img src="./images/search-icon.png" id="search" onclick="search()" alt="">
+      <input type="text">
+    </div>
+    <div id="container">
+      <div id="slider">
+        <div class="slid" id="slid1">
+          <div class="content">
+            <div class="heading">
+              <marquee behavior="alternate" direction="right">
+              <marquee behavior="alternate" direction="up">
+                <h1>..Welcome..to.. <br><span>Hephzibah</span>  
+                <br> Word Ministries</h1>
+              </marquee>
+              </marquee>
+            </div>
+            <div class="des">
+              <marquee behavior="alternate" direction="right">
+                <p>...The tonging church...</p></marquee>
+            </div>
+          </div>
+        </div>
+        <div class="slid" id="slid2">
+          <div class="content">
+            <div class="heading">
+              <marquee behavior="alternate" direction="left">
+                <marquee behavior="alternate" direction="down">
+                  <h1>.... a place of transformation</h1>
+                </marquee></marquee>
+            </div>
+            <div class="des">
+              <marquee behavior="alternate" direction="right">
+                <p>And thou shall be called HEPHZIBAH</p>
+              </marquee>
+            </div>
+          </div>
+        </div>
+        <div class="slid" id="slid3">
+          <div class="content">
+            <div class="heading">
+              <marquee behavior="alternate" direction="left">
+                <marquee behavior="alternate" direction="down">
+                  <h1>... start living a christlike life today</h1>
+                </marquee></marquee>
+            </div>
+            <div class="des">
+              <marquee behavior="alternate" direction="right">
+                <p>... let this life be in which was in christ Jesus</p>
+              </marquee>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <script src="./app.js"></script>
+</body>
+</html>

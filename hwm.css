@@ -1,0 +1,331 @@
+#home-page{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+:root{
+    --orange:#ffa500;
+    --blue:rgb(8, 58, 3);
+}
+header{
+    display: inline-block;
+    width: 100%;
+    min-height: 70px;
+    position: fixed;
+    z-index: 1;
+}
+nav{
+    background-color:transparent;
+}
+.logo{
+    float: left;
+    width: 10px;
+    color: rgb(213, 212, 218);
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 50px;
+    display: flex;
+    word-spacing: -5px;
+    letter-spacing: 1px;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+nav ul{
+    padding: 10;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav img{
+    width: 40px;
+    height: 40px;
+}
+nav ul li{
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+nav li :hover{
+    color: rgb(212, 25, 25);
+    font-size: 30px;
+}
+nav ul img:hover{
+    width: 60px;
+    height: 60px;
+}
+.toggle-btn{
+    width: 35px;
+    position: absolute;
+    right: 80px;
+    top: 40px;
+    display: none;
+}
+.toggle-btn span{
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    float: left;
+    margin-bottom: 8px;
+}
+/* sidenav */
+.sidenav{
+    width: 50px;
+    height: 500px;
+    padding-top: 50px;
+}
+.sidenav .menu{
+    color: #fff;
+    font-style: italic;
+    font-weight: bolder;
+    width: 50px;
+}
+.sidenav i{
+    color: rgb(6, 6, 105);
+    width: 25px;
+    height: 25px;
+    display: list-item;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.sidenav i:hover{
+    width: 30px;
+    height: 30px;
+}
+#container{
+    width: 100%;
+    height: 150vh;
+}
+#slider{
+    width: 300%;
+    height: 100%;
+    display: flex;
+    transition: .5s;
+}
+.slid{
+    width: 33.33%;
+    height: 73.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.573);
+    background-blend-mode: multiply;
+}
+#slid1{
+    background-image: url(./images/worship\ \(2\).jpeg);
+}
+#slid2{
+    background-image: url(./images/worship\ \(1\).jpeg);
+}
+#slid3{
+    background-image: url(./images/images.jpeg);
+}
+.content{
+    width: 80%;
+    height: 500px;
+    text-align: center;
+}
+.content marquee{
+    height: 300px;
+
+}
+marquee h1{
+    font-size: 30px;
+    font-style: italic;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    color: #fff;
+}
+marquee h1 span{
+    color: rgb(207, 22, 22);
+}
+marquee p{
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    line-height: 40px;
+}
+#form{
+    width: 90%;
+    height: 70px;
+    background-color:#000;
+    position: absolute;
+    z-index: 1;
+    border-radius: 10px;
+    margin-left: 50px;
+    display: none;
+}
+#form input{
+    width: 90%;
+    height: 30px;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bolder;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+}
+#form img{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    float: left;
+    margin-left: 1050px;
+}
+/* media querry */
+@media only screen and (max-width: 500px) {
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        height: 150px;
+    }
+    .toggle-btn{
+        display: block;
+        background-color: #fff;
+    }
+    nav{
+        display: none;
+        width: 100%;
+        border-top: 1px solid #000;
+    }
+}
+
+/* about page */
+.back{
+    background-image: url(./images/FB_IMG_1648124555587.jpg);
+    width: 99%;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    position: fixed;
+    overflow: scroll;
+}
+.back .abt-us{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    margin-top: 300px;
+    width: 100%;
+    height: 600px;
+}
+.back .abt-us .pastor{
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+    background-image: linear-gradient(80deg,rgb(5, 5, 110),rgb(128, 0, 0)); 
+    margin-left: 50px;
+    margin-top: 50px;
+    color: #fff;
+    text-align: center;
+    border: 2px dotted red;
+}
+.back .abt-us .mandate{
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+    background-image: linear-gradient(80deg, rgb(170, 5, 5),rgb(2, 65, 2)); 
+    margin-left: 120px;
+    margin-top: 50px;
+    color: rgb(242, 242, 247);
+    text-align: center;
+    border: 2px dotted red;
+}
+.back .abt-us .pastor:hover{
+    width: 600px;
+    height: 600px;
+    border-radius: 300px;
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size:20px ;
+    font-weight: bolder;
+    overflow: hidden;
+}
+.back .abt-us .mandate:hover{
+    width: 600px;
+    height: 600px;
+    border-radius: 300px;
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size:20px ;
+    font-weight: bolder;
+    overflow: hidden;
+}
+/* footer */
+ .footer{
+    background-color: gray;
+    position: absolute;
+    z-index: 1;
+    margin-top: 900px;
+    width: 100%;
+    height: 400px;
+}
+.footer .content{
+    width: 100%;
+    height: 400px;
+    display: flex;    
+}
+.footer .content p{
+    width: 300px;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 150px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+.footer .content .imgs{
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 400px;
+}
+.footer .content i{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    color: rgb(7, 7, 63);
+
+}
+.footer .content i:hover{
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.footer .content form{
+    width: 400px;
+    height: 300px;
+    margin-left: 400px;
+}
+.footer .content form textarea{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+}
+.footer .content form button{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(97, 22, 3);
+    color: #fff;
+    border: 2px solid red;
+}
+/* contact page */
+#contact{
+    color: rgb(10, 2, 56);
+   height: 300px;
+}
